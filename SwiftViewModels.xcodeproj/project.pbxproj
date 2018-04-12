@@ -14,6 +14,7 @@
 		F6839E04207FA4F400613896 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839DFF207FA4F400613896 /* ImageViewModel.swift */; };
 		F6839E05207FA4F400613896 /* TextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839E00207FA4F400613896 /* TextViewModel.swift */; };
 		F6839E06207FA4F400613896 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839E01207FA4F400613896 /* Border.swift */; };
+		F6839E11207FE8A000613896 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839E10207FE8A000613896 /* SliderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		F6839DFF207FA4F400613896 /* ImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		F6839E00207FA4F400613896 /* TextViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewModel.swift; sourceTree = "<group>"; };
 		F6839E01207FA4F400613896 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		F6839E10207FE8A000613896 /* SliderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				F6839DFE207FA4F400613896 /* ViewViewModel.swift */,
 				F6839DFF207FA4F400613896 /* ImageViewModel.swift */,
 				F6839E00207FA4F400613896 /* TextViewModel.swift */,
+				F6839E10207FE8A000613896 /* SliderViewModel.swift */,
 				F6839E01207FA4F400613896 /* Border.swift */,
 			);
 			path = Core;
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6839E04207FA4F400613896 /* ImageViewModel.swift in Sources */,
+				F6839E11207FE8A000613896 /* SliderViewModel.swift in Sources */,
 				F6839E06207FA4F400613896 /* Border.swift in Sources */,
 				F6839E02207FA4F400613896 /* ButtonViewModel.swift in Sources */,
 				F6839E03207FA4F400613896 /* ViewViewModel.swift in Sources */,
