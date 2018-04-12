@@ -1,17 +1,17 @@
 import UIKit
 
-struct ViewViewModel {
-    let backgroundColor: UIColor
-    let border: Border
-    let cornerRadius: CGFloat
+public struct ViewViewModel {
+    public let backgroundColor: UIColor
+    public let border: Border
+    public let cornerRadius: CGFloat
 
-    init(backgroundColor: UIColor = .white, border: Border = .none, cornerRadius: CGFloat = 0) {
+    public init(backgroundColor: UIColor = .white, border: Border = .none, cornerRadius: CGFloat = 0) {
         self.backgroundColor = backgroundColor
         self.border = border
         self.cornerRadius = cornerRadius
     }
 
-    func apply(toView view: UIView) {
+    public func apply(toView view: UIView) {
         if view.backgroundColor != backgroundColor {
             view.backgroundColor = backgroundColor
         }

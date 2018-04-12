@@ -1,10 +1,10 @@
 import UIKit
 
-enum Border {
+public enum Border {
     case none
     case border(width: Float, color: UIColor)
 
-    func apply(toView view: UIView) {
+    public func apply(toView view: UIView) {
         switch self {
         case .none:
             if view.layer.borderColor != nil {

@@ -1,12 +1,18 @@
 import UIKit
 
-struct ButtonViewModel {
-    let viewViewModel: ViewViewModel
-    let textViewModel: TextViewModel
+public struct ButtonViewModel {
+    public let viewViewModel: ViewViewModel
+    public let textViewModel: TextViewModel
 
-    let didTapCallback: (() -> Void)?
+    public let didTapCallback: (() -> Void)?
 
-    func apply(toButton button: UIButton) {
+    public init(viewViewModel: ViewViewModel, textViewModel: TextViewModel, didTapCallback: (() -> Void)? = nil) {
+        self.viewViewModel = viewViewModel
+        self.textViewModel = textViewModel
+        self.didTapCallback = didTapCallback
+    }
+
+    public func apply(toButton button: UIButton) {
         if button.titleLabel?.text != textViewModel.text {
             button.setTitle(textViewModel.text, for: .normal)
         }

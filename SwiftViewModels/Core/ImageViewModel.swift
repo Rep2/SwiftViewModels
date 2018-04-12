@@ -1,15 +1,15 @@
 import UIKit
 
-struct ImageViewModel {
-    let image: UIImage?
-    let viewViewModel: ViewViewModel
+public struct ImageViewModel {
+    public let image: UIImage?
+    public let viewViewModel: ViewViewModel
 
-    init(image: UIImage?, viewViewModel: ViewViewModel) {
+    public init(image: UIImage?, viewViewModel: ViewViewModel) {
         self.image = image
         self.viewViewModel = viewViewModel
     }
 
-    func apply(toImageView imageView: UIImageView) {
+    public func apply(toImageView imageView: UIImageView) {
         if imageView.image != image {
             imageView.image = image
         }
