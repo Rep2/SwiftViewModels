@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F6839DE0207FA40300613896"
-               BuildableName = "ViewModels.framework"
-               BlueprintName = "ViewModels"
-               ReferencedContainer = "container:ViewModels.xcodeproj">
+               BuildableName = "SwiftViewModels.framework"
+               BlueprintName = "SwiftViewModels"
+               ReferencedContainer = "container:SwiftViewModels.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F6839DE9207FA40300613896"
-               BuildableName = "ViewModelsTests.xctest"
-               BlueprintName = "ViewModelsTests"
-               ReferencedContainer = "container:ViewModels.xcodeproj">
+               BuildableName = "SwiftViewModelsTests.xctest"
+               BlueprintName = "SwiftViewModelsTests"
+               ReferencedContainer = "container:SwiftViewModels.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6839DE0207FA40300613896"
-            BuildableName = "ViewModels.framework"
-            BlueprintName = "ViewModels"
-            ReferencedContainer = "container:ViewModels.xcodeproj">
+            BuildableName = "SwiftViewModels.framework"
+            BlueprintName = "SwiftViewModels"
+            ReferencedContainer = "container:SwiftViewModels.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6839DE0207FA40300613896"
-            BuildableName = "ViewModels.framework"
-            BlueprintName = "ViewModels"
-            ReferencedContainer = "container:ViewModels.xcodeproj">
+            BuildableName = "SwiftViewModels.framework"
+            BlueprintName = "SwiftViewModels"
+            ReferencedContainer = "container:SwiftViewModels.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6839DE0207FA40300613896"
-            BuildableName = "ViewModels.framework"
-            BlueprintName = "ViewModels"
-            ReferencedContainer = "container:ViewModels.xcodeproj">
+            BuildableName = "SwiftViewModels.framework"
+            BlueprintName = "SwiftViewModels"
+            ReferencedContainer = "container:SwiftViewModels.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
