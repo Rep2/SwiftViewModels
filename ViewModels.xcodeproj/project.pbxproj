@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F6839DEB207FA40300613896 /* ViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6839DE1207FA40300613896 /* ViewModels.framework */; };
-		F6839DF0207FA40300613896 /* ViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839DEF207FA40300613896 /* ViewModelsTests.swift */; };
 		F6839DF2207FA40300613896 /* ViewModels.h in Headers */ = {isa = PBXBuildFile; fileRef = F6839DE4207FA40300613896 /* ViewModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6839E02207FA4F400613896 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839DFD207FA4F400613896 /* ButtonViewModel.swift */; };
+		F6839E03207FA4F400613896 /* ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839DFE207FA4F400613896 /* ViewViewModel.swift */; };
+		F6839E04207FA4F400613896 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839DFF207FA4F400613896 /* ImageViewModel.swift */; };
+		F6839E05207FA4F400613896 /* TextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839E00207FA4F400613896 /* TextViewModel.swift */; };
+		F6839E06207FA4F400613896 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839E01207FA4F400613896 /* Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +31,12 @@
 		F6839DE4207FA40300613896 /* ViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModels.h; sourceTree = "<group>"; };
 		F6839DE5207FA40300613896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6839DEA207FA40300613896 /* ViewModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6839DEF207FA40300613896 /* ViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
 		F6839DF1207FA40300613896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6839DFD207FA4F400613896 /* ButtonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
+		F6839DFE207FA4F400613896 /* ViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewViewModel.swift; sourceTree = "<group>"; };
+		F6839DFF207FA4F400613896 /* ImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		F6839E00207FA4F400613896 /* TextViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewModel.swift; sourceTree = "<group>"; };
+		F6839E01207FA4F400613896 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		F6839DE3207FA40300613896 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F6839DFC207FA4F400613896 /* Core */,
 				F6839DE4207FA40300613896 /* ViewModels.h */,
 				F6839DE5207FA40300613896 /* Info.plist */,
 			);
@@ -80,10 +89,21 @@
 		F6839DEE207FA40300613896 /* ViewModelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6839DEF207FA40300613896 /* ViewModelsTests.swift */,
 				F6839DF1207FA40300613896 /* Info.plist */,
 			);
 			path = ViewModelsTests;
+			sourceTree = "<group>";
+		};
+		F6839DFC207FA4F400613896 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F6839DFD207FA4F400613896 /* ButtonViewModel.swift */,
+				F6839DFE207FA4F400613896 /* ViewViewModel.swift */,
+				F6839DFF207FA4F400613896 /* ImageViewModel.swift */,
+				F6839E00207FA4F400613896 /* TextViewModel.swift */,
+				F6839E01207FA4F400613896 /* Border.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +128,7 @@
 				F6839DDD207FA40300613896 /* Frameworks */,
 				F6839DDE207FA40300613896 /* Headers */,
 				F6839DDF207FA40300613896 /* Resources */,
+				F6839DFB207FA43600613896 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -189,11 +210,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6839DFB207FA43600613896 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6839DDC207FA40300613896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6839E04207FA4F400613896 /* ImageViewModel.swift in Sources */,
+				F6839E06207FA4F400613896 /* Border.swift in Sources */,
+				F6839E02207FA4F400613896 /* ButtonViewModel.swift in Sources */,
+				F6839E03207FA4F400613896 /* ViewViewModel.swift in Sources */,
+				F6839E05207FA4F400613896 /* TextViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6839DF0207FA40300613896 /* ViewModelsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +431,7 @@
 		F6839DF9207FA40300613896 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
 				INFOPLIST_FILE = ViewModelsTests/Info.plist;
@@ -407,6 +450,7 @@
 		F6839DFA207FA40300613896 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
 				INFOPLIST_FILE = ViewModelsTests/Info.plist;
