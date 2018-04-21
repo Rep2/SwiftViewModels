@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6673F9C208B52E90072D573 /* SwitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6673F9B208B52E90072D573 /* SwitchViewModel.swift */; };
 		F6839DEB207FA40300613896 /* SwiftViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6839DE1207FA40300613896 /* SwiftViewModels.framework */; };
 		F6839DF2207FA40300613896 /* ViewModels.h in Headers */ = {isa = PBXBuildFile; fileRef = F6839DE4207FA40300613896 /* ViewModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6839E02207FA4F400613896 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6839DFD207FA4F400613896 /* ButtonViewModel.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6673F9B208B52E90072D573 /* SwitchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewModel.swift; sourceTree = "<group>"; };
 		F6839DE1207FA40300613896 /* SwiftViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6839DE4207FA40300613896 /* ViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModels.h; sourceTree = "<group>"; };
 		F6839DE5207FA40300613896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				F6839E00207FA4F400613896 /* TextViewModel.swift */,
 				F6839E10207FE8A000613896 /* SliderViewModel.swift */,
 				F6839E01207FA4F400613896 /* Border.swift */,
+				F6673F9B208B52E90072D573 /* SwitchViewModel.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				F6839E04207FA4F400613896 /* ImageViewModel.swift in Sources */,
 				F6839E11207FE8A000613896 /* SliderViewModel.swift in Sources */,
+				F6673F9C208B52E90072D573 /* SwitchViewModel.swift in Sources */,
 				F6839E06207FA4F400613896 /* Border.swift in Sources */,
 				F6839E02207FA4F400613896 /* ButtonViewModel.swift in Sources */,
 				F6839E03207FA4F400613896 /* ViewViewModel.swift in Sources */,
