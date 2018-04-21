@@ -4,9 +4,12 @@ public struct SwitchViewModel {
     public var isOn: Bool
     public let viewViewModel: ViewViewModel
 
-    public init(isOn: Bool, viewViewModel: ViewViewModel = ViewViewModel()) {
+    public let isOnValueChangedCallback: ((Bool) -> Void)?
+
+    public init(isOn: Bool, viewViewModel: ViewViewModel = ViewViewModel(), isOnValueChangedCallback: ((Bool) -> Void)? = nil) {
         self.isOn = isOn
         self.viewViewModel = viewViewModel
+        self.isOnValueChangedCallback = isOnValueChangedCallback
     }
 
     public func apply(toSwitch switch: UISwitch) {
