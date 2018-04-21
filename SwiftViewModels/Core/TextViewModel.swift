@@ -6,7 +6,7 @@ public struct TextViewModel {
     public let font: UIFont
     public let viewViewModel: ViewViewModel
 
-    public init(text: String?, textColor: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 15), viewViewModel: ViewViewModel) {
+    public init(text: String?, textColor: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 15), viewViewModel: ViewViewModel = ViewViewModel()) {
         self.text = text
         self.textColor = textColor
         self.font = font
