@@ -33,13 +33,13 @@ Every base view model implements ```apply``` method for intended view element.
 ### Carthage
 
 ```
-github "Rep2/SwiftViewModels" ~> 0.2
+github "Rep2/SwiftViewModels" ~> 0.2.1
 ```
 
 ### CocoaPods
 
 ```
-pod 'SwiftViewModels', '~> 0.2'
+pod 'SwiftViewModels', '~> 0.2.1'
 ```
 
 ## License

@@ -14,15 +14,15 @@ public struct TextViewModel {
     }
 
     public func apply(toLabel label: UILabel) {
-        if let text = text, label.text != text {
+        if label.text != text {
             label.text = text
         }
 
-        if let textColor = textColor, label.textColor != textColor {
+        if label.textColor != textColor {
             label.textColor = textColor
         }
 
-        if let font = font, label.font != font {
+        if label.font != font {
             label.font = font
         }
 
