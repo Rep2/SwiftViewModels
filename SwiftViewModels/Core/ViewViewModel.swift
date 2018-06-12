@@ -12,17 +12,16 @@ public struct ViewViewModel {
     }
 
     public func apply(toView view: UIView) {
-        if view.backgroundColor != backgroundColor {
+        if let backgroundColor = backgroundColor, view.backgroundColor != backgroundColor {
             view.backgroundColor = backgroundColor
         }
 
         border?.apply(toView: view)
 
-        let unwrapedCornerRadius = (cornerRadius ?? 0)
-        if view.layer.cornerRadius != unwrapedCornerRadius {
-            view.layer.cornerRadius = unwrapedCornerRadius
+        if let cornerRadius = cornerRadius, view.layer.cornerRadius != cornerRadius {
+            view.layer.cornerRadius = cornerRadius
 
-            view.layer.masksToBounds = unwrapedCornerRadius > 0
+            view.layer.masksToBounds = cornerRadius > 0
         }
     }
 }

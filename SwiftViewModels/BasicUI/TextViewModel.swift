@@ -18,11 +18,11 @@ public struct TextViewModel {
             label.text = text
         }
 
-        if label.textColor != textColor {
+        if let textColor = textColor, label.textColor != textColor {
             label.textColor = textColor
         }
 
-        if label.font != font {
+        if let font = font, label.font != font {
             label.font = font
         }
 
