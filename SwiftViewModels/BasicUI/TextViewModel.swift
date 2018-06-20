@@ -28,4 +28,20 @@ public struct TextViewModel {
 
         viewViewModel.apply(toView: label)
     }
+
+    public func apply(toTextField textField: UITextField) {
+        if textField.text != text {
+            textField.text = text
+        }
+
+        if let textColor = textColor, textField.textColor != textColor {
+            textField.textColor = textColor
+        }
+
+        if let font = font, textField.font != font {
+            textField.font = font
+        }
+
+        viewViewModel.apply(toView: textField)
+    }
 }
