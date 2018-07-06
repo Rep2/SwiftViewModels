@@ -20,8 +20,6 @@ public struct ViewViewModel {
 
         if let cornerRadius = cornerRadius, view.layer.cornerRadius != cornerRadius {
             view.layer.cornerRadius = cornerRadius
-
-            view.layer.masksToBounds = cornerRadius > 0
         }
     }
 }
