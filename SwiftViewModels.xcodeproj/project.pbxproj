@@ -10,7 +10,6 @@
 		F6647458215220A100D59489 /* TextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6647457215220A100D59489 /* TextViewModel.swift */; };
 		F664745A215220D500D59489 /* String+LabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6647459215220D500D59489 /* String+LabelViewModel.swift */; };
 		F664745C2152217400D59489 /* AttributedString+LabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664745B2152217400D59489 /* AttributedString+LabelViewModel.swift */; };
-		F664745E2152219800D59489 /* TextViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664745D2152219800D59489 /* TextViewViewModel.swift */; };
 		F6673F9C208B52E90072D573 /* SwitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6673F9B208B52E90072D573 /* SwitchViewModel.swift */; };
 		F66ACF6821527BAC00CC3FD7 /* Array+ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6721527BAC00CC3FD7 /* Array+ViewViewModel.swift */; };
 		F66ACF6A21527C7100CC3FD7 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6921527C7100CC3FD7 /* Border.swift */; };
@@ -40,7 +39,6 @@
 		F6647457215220A100D59489 /* TextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModel.swift; sourceTree = "<group>"; };
 		F6647459215220D500D59489 /* String+LabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LabelViewModel.swift"; sourceTree = "<group>"; };
 		F664745B2152217400D59489 /* AttributedString+LabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributedString+LabelViewModel.swift"; sourceTree = "<group>"; };
-		F664745D2152219800D59489 /* TextViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewModel.swift; sourceTree = "<group>"; };
 		F6673F9B208B52E90072D573 /* SwitchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewModel.swift; sourceTree = "<group>"; };
 		F66ACF6721527BAC00CC3FD7 /* Array+ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ViewViewModel.swift"; sourceTree = "<group>"; };
 		F66ACF6921527C7100CC3FD7 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				F6647457215220A100D59489 /* TextViewModel.swift */,
 				F6647459215220D500D59489 /* String+LabelViewModel.swift */,
 				F664745B2152217400D59489 /* AttributedString+LabelViewModel.swift */,
-				F664745D2152219800D59489 /* TextViewViewModel.swift */,
 			);
 			path = TextViewModel;
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 				F664745C2152217400D59489 /* AttributedString+LabelViewModel.swift in Sources */,
 				F66ACF6C21527D9600CC3FD7 /* Color+ViewViewModel.swift in Sources */,
 				F6647458215220A100D59489 /* TextViewModel.swift in Sources */,
-				F664745E2152219800D59489 /* TextViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
