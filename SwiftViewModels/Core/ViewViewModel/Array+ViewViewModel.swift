@@ -1,9 +1,11 @@
 import UIKit
 
-extension Array: ViewViewModel where Element: ViewViewModel {
+extension Array: ViewViewModel {
     public func apply(to view: UIView) {
         self.forEach {
-            $0.apply(to: view)
+            guard let viewModel = $0 as? ViewViewModel else { return }
+
+            viewModel.apply(to: view)
         }
     }
 }
