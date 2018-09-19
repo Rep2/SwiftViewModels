@@ -3,6 +3,11 @@ import UIKit
 public struct Border {
     public let width: Float
     public let color: UIColor
+
+    init(width: Float, color: UIColor) {
+        self.width = width
+        self.color = color
+    }
 }
 
 extension Border: ViewViewModel {
