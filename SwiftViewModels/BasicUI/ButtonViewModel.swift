@@ -13,18 +13,7 @@ public struct ButtonViewModel {
     }
 
     public func apply(toButton button: UIButton) {
-        if let text = textViewModel.text, button.titleLabel?.text != text {
-            button.setTitle(text, for: .normal)
-        }
-
-        if let textColor = textViewModel.textColor, button.titleColor(for: .normal) != textColor {
-            button.setTitleColor(textColor, for: .normal)
-        }
-
-        if let font = textViewModel.font, button.titleLabel?.font != font {
-            button.titleLabel?.font = font
-        }
-
+        textViewModel.apply(to: button)
         viewViewModel.apply(toView: button)
     }
 }
