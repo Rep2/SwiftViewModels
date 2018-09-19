@@ -6,7 +6,7 @@ public struct SwitchViewModel {
 
     public let isOnValueChangedCallback: ((Bool) -> Void)?
 
-    public init(isOn: Bool, viewViewModel: ViewViewModel?, isOnValueChangedCallback: ((Bool) -> Void)? = nil) {
+    public init(isOn: Bool, viewViewModel: ViewViewModel? = nil, isOnValueChangedCallback: ((Bool) -> Void)? = nil) {
         self.isOn = isOn
         self.viewViewModel = viewViewModel
         self.isOnValueChangedCallback = isOnValueChangedCallback

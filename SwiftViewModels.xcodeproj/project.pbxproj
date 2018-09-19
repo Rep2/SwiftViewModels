@@ -13,7 +13,7 @@
 		F664745E2152219800D59489 /* TextViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664745D2152219800D59489 /* TextViewViewModel.swift */; };
 		F6673F9C208B52E90072D573 /* SwitchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6673F9B208B52E90072D573 /* SwitchViewModel.swift */; };
 		F66ACF6821527BAC00CC3FD7 /* Array+ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6721527BAC00CC3FD7 /* Array+ViewViewModel.swift */; };
-		F66ACF6A21527C7100CC3FD7 /* Border+ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6921527C7100CC3FD7 /* Border+ViewViewModel.swift */; };
+		F66ACF6A21527C7100CC3FD7 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6921527C7100CC3FD7 /* Border.swift */; };
 		F66ACF6C21527D9600CC3FD7 /* Color+ViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6B21527D9600CC3FD7 /* Color+ViewViewModel.swift */; };
 		F66ACF6E21527DB600CC3FD7 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ACF6D21527DB600CC3FD7 /* CornerRadius.swift */; };
 		F6839DEB207FA40300613896 /* SwiftViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6839DE1207FA40300613896 /* SwiftViewModels.framework */; };
@@ -41,7 +41,7 @@
 		F664745D2152219800D59489 /* TextViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewModel.swift; sourceTree = "<group>"; };
 		F6673F9B208B52E90072D573 /* SwitchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewModel.swift; sourceTree = "<group>"; };
 		F66ACF6721527BAC00CC3FD7 /* Array+ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ViewViewModel.swift"; sourceTree = "<group>"; };
-		F66ACF6921527C7100CC3FD7 /* Border+ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Border+ViewViewModel.swift"; sourceTree = "<group>"; };
+		F66ACF6921527C7100CC3FD7 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
 		F66ACF6B21527D9600CC3FD7 /* Color+ViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ViewViewModel.swift"; sourceTree = "<group>"; };
 		F66ACF6D21527DB600CC3FD7 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		F6839DE1207FA40300613896 /* SwiftViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +90,7 @@
 			children = (
 				F6839DFE207FA4F400613896 /* ViewViewModel.swift */,
 				F66ACF6721527BAC00CC3FD7 /* Array+ViewViewModel.swift */,
-				F66ACF6921527C7100CC3FD7 /* Border+ViewViewModel.swift */,
+				F66ACF6921527C7100CC3FD7 /* Border.swift */,
 				F66ACF6B21527D9600CC3FD7 /* Color+ViewViewModel.swift */,
 				F66ACF6D21527DB600CC3FD7 /* CornerRadius.swift */,
 			);
@@ -282,7 +282,7 @@
 			files = (
 				F66ACF6E21527DB600CC3FD7 /* CornerRadius.swift in Sources */,
 				F664745A215220D500D59489 /* String+LabelViewModel.swift in Sources */,
-				F66ACF6A21527C7100CC3FD7 /* Border+ViewViewModel.swift in Sources */,
+				F66ACF6A21527C7100CC3FD7 /* Border.swift in Sources */,
 				F6839E04207FA4F400613896 /* ImageViewModel.swift in Sources */,
 				F66ACF6821527BAC00CC3FD7 /* Array+ViewViewModel.swift in Sources */,
 				F6839E11207FE8A000613896 /* SliderViewModel.swift in Sources */,

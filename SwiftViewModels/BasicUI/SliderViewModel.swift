@@ -6,7 +6,7 @@ public struct SliderViewModel {
     public let current: Float
     public let viewViewModel: ViewViewModel?
 
-    public init(minimum: Float, maximum: Float, current: Float, viewViewModel: ViewViewModel?) {
+    public init(minimum: Float, maximum: Float, current: Float, viewViewModel: ViewViewModel? = nil) {
         self.minimum = minimum
         self.maximum = maximum
         self.current = current

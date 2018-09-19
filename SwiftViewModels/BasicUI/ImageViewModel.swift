@@ -4,7 +4,7 @@ public struct ImageViewModel {
     public let image: UIImage?
     public let viewViewModel: ViewViewModel?
 
-    public init(image: UIImage?, viewViewModel: ViewViewModel?) {
+    public init(image: UIImage?, viewViewModel: ViewViewModel? = nil) {
         self.image = image
         self.viewViewModel = viewViewModel
     }

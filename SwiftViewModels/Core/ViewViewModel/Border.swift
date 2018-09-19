@@ -1,8 +1,8 @@
 import UIKit
 
 public struct Border {
-    let width: Float
-    let color: UIColor
+    public let width: Float
+    public let color: UIColor
 }
 
 extension Border: ViewViewModel {

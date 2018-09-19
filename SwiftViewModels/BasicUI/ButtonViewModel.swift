@@ -6,7 +6,7 @@ public struct ButtonViewModel {
 
     public let didTapCallback: (() -> Void)?
 
-    public init(textViewModel: TextViewModel, viewViewModel: ViewViewModel?, didTapCallback: (() -> Void)? = nil) {
+    public init(textViewModel: TextViewModel, viewViewModel: ViewViewModel? = nil, didTapCallback: (() -> Void)? = nil) {
         self.viewViewModel = viewViewModel
         self.textViewModel = textViewModel
         self.didTapCallback = didTapCallback
