@@ -2,9 +2,9 @@ import UIKit
 
 public struct ImageViewModel {
     public let image: UIImage?
-    public let viewViewModel: ViewViewModel
+    public let viewViewModel: ViewViewModel?
 
-    public init(image: UIImage?, viewViewModel: ViewViewModel = ViewViewModel()) {
+    public init(image: UIImage?, viewViewModel: ViewViewModel?) {
         self.image = image
         self.viewViewModel = viewViewModel
     }
@@ -14,6 +14,6 @@ public struct ImageViewModel {
             imageView.image = image
         }
 
-        viewViewModel.apply(toView: imageView)
+        viewViewModel?.apply(to: imageView)
     }
 }

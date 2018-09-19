@@ -2,11 +2,11 @@ import UIKit
 
 public struct SwitchViewModel {
     public var isOn: Bool
-    public let viewViewModel: ViewViewModel
+    public let viewViewModel: ViewViewModel?
 
     public let isOnValueChangedCallback: ((Bool) -> Void)?
 
-    public init(isOn: Bool, viewViewModel: ViewViewModel = ViewViewModel(), isOnValueChangedCallback: ((Bool) -> Void)? = nil) {
+    public init(isOn: Bool, viewViewModel: ViewViewModel?, isOnValueChangedCallback: ((Bool) -> Void)? = nil) {
         self.isOn = isOn
         self.viewViewModel = viewViewModel
         self.isOnValueChangedCallback = isOnValueChangedCallback
@@ -17,6 +17,6 @@ public struct SwitchViewModel {
             `switch`.isOn = isOn
         }
 
-        viewViewModel.apply(toView: `switch`)
+        viewViewModel?.apply(to: `switch`)
     }
 }
