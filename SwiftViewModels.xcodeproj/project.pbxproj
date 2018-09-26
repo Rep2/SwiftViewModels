@@ -228,6 +228,7 @@
 				TargetAttributes = {
 					F6839DE0207FA40300613896 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 					};
 					F6839DE9207FA40300613896 = {
 						CreatedOnToolsVersion = 9.3;
@@ -467,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rep.ViewModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -493,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rep.ViewModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -1,11 +1,9 @@
 import UIKit
 
-extension Array: ImageViewModel {
+extension Array: ImageViewModel where Element: ImageViewModel {
     public func apply(to imageView: UIImageView) {
         self.forEach {
-            guard let viewModel = $0 as? ImageViewModel else { return }
-
-            viewModel.apply(to: imageView)
+            $0.apply(to: imageView)
         }
     }
 }
