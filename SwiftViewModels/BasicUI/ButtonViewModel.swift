@@ -1,19 +1,47 @@
 import UIKit
 
-public struct ButtonViewModel {
-    public let viewViewModel: ViewViewModel?
-    public let textViewModel: TextViewModel
+protocol ButtonViewModel {
+    func apply(to button: UIButton)
+}
 
-    public let didTapCallback: (() -> Void)?
+extension Array: ButtonViewModel {
+    public func apply(to button: UIButton) {
+        self.forEach {
+            guard let viewModel = $0 as? ButtonViewModel else { return }
 
-    public init(textViewModel: TextViewModel, viewViewModel: ViewViewModel? = nil, didTapCallback: (() -> Void)? = nil) {
-        self.viewViewModel = viewViewModel
-        self.textViewModel = textViewModel
-        self.didTapCallback = didTapCallback
+            viewModel.apply(to: button)
+        }
     }
+}
 
-    public func apply(toButton button: UIButton) {
-        textViewModel.apply(to: button)
-        viewViewModel?.apply(to: button)
+extension String: ButtonViewModel {
+    func apply(to button: UIButton) {
+        button.setTitle(self, for: .normal)
+    }
+}
+
+extension Border: ButtonViewModel {
+    public func apply(to button: UIButton) {
+        self.apply(to: button as UIView)
+    }
+}
+
+extension UIColor: ButtonViewModel {
+    public func apply(to button: UIButton) {
+        self.apply(to: button as UIView)
+    }
+}
+
+extension CornerRadius: ButtonViewModel {
+    public func apply(to button: UIButton) {
+        self.apply(to: button as UIView)
+    }
+}
+
+struct CustomButtonViewModel: ButtonViewModel {
+    var applyCallback: (UIButton) -> Void
+
+    func apply(to button: UIButton) {
+        applyCallback(button)
     }
 }
