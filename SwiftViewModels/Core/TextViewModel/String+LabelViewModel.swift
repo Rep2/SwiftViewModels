@@ -12,10 +12,4 @@ extension String: TextViewModel {
 
         label.text = self
     }
-
-    public func apply(to button: UIButton) {
-        guard button.title(for: .normal) != self else { return }
-
-        button.setTitle(self, for: .normal)
-    }
 }
