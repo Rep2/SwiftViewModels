@@ -12,10 +12,4 @@ extension NSAttributedString: TextViewModel {
 
         label.attributedText = self
     }
-
-    public func apply(to button: UIButton) {
-        guard button.attributedTitle(for: .normal) != self else { return }
-
-        button.setAttributedTitle(self, for: .normal)
-    }
 }

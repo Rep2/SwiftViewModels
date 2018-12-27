@@ -20,6 +20,12 @@ extension String: ButtonViewModel {
     }
 }
 
+extension NSAttributedString: ButtonViewModel {
+    public func apply(to button: UIButton) {
+        button.setAttributedTitle(self, for: .normal)
+    }
+}
+
 extension Border: ButtonViewModel {
     public func apply(to button: UIButton) {
         self.apply(to: button as UIView)
